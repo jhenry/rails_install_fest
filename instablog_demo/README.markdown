@@ -37,6 +37,8 @@ We want to make sure our authors are not forgetting important items, such as tit
 2. Add the line:
 
 	<pre>validates_presence_of :title, :message => "can't be blank"</pre>
+	
+Try adding a new post, and leaving the title blank.  	
 
 ## Let there be comments
 
