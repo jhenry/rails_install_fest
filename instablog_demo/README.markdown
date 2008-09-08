@@ -1,5 +1,16 @@
 
-## Creating a blog in less than 5 steps
+## Setting up our environment
+
+Start the db (sqlite3 is not installed by default)
+
+	$ pg_ctl start -w 
+
+Set the db connection
+
+	$ cp sample/config/database.yml instablog/config/ 
+
+
+## Creating a blog in 5 steps
 
 We're going to start by creating a blog, in less than 5 steps.  Before we begin, we'll want to open up a terminal.
 
@@ -8,7 +19,8 @@ We're going to start by creating a blog, in less than 5 steps.  Before we begin,
 	$ rails instablog
 
 2. Next, we are going generate some of the code and prepare some database tables to get us started. 
-
+	
+	$ cd instablog
 	$ script/generate scaffold Post title:string body:text
 
 3. We have created a basic structure for our application, but we still need to actually create the database tables before moving forward.
