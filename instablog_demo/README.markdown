@@ -25,13 +25,22 @@ Loading http://localhost:3000/posts brings us to the blog we just built.  Try ad
 
 Table based layouts are so Twentieth Century.  Let's replace those tables with, header and paragraph tags.
 
+1. Open up app -> views -> posts -> index.html.erb
+2. Remove table tags and replace with headers and paragraphs.
+3. Save and reload page.
+
 ## Adding validation
 
-We want to make sure our authors are not forgetting important items, such as titles.  
+We want to make sure our authors are not forgetting important items, such as titles.  Rails makes this pretty easy to do.
 
-## Let there be comments?
+1. Open app -> models -> post.rb
+2. Add the line:
 
-Time permitting, lets get wild and add a comment feature.
+	<pre>validates_presence_of :title, :message => "can't be blank"</pre>
+
+## Let there be comments
+
+Lets get wild and add a comment feature.
 
 ## References
 
